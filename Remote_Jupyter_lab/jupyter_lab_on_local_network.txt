@@ -1,0 +1,54 @@
+Allow windows 10 to be accessed from other PCs
+Open Powershell with admin access
+1. Make sure that OpenSSH is available
+Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+
+This should tell which one is installed.
+OpenSSH.Client is to access connections
+OpenSSH.Server to create servers
+
+2. Install missing stuffs
+# Install the OpenSSH Client
+Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+
+# Install the OpenSSH Server
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+
+3. Go to services and find two servers starting with OPENssh
+Start the services and set them to manual as we are not always using ssh
+
+Now, our Windows 10 can accept and host ssh connections
+
+4. On Linux PC, check if ssh deamon (service) is running
+sudo systemctl status sshd
+If not install 
+sudo apt-get install openssh-server
+
+5. Enable SSH server on system boot
+sudo systemctl enable ssh
+
+Now, from either windows or Ubuntu we can ssh using
+ssh "Username"@localIP
+  
+Now configure Jupyter lab
+
+1. Generate config file
+jupyter lab --generate-config
+
+2. Set password for security Ive set it as hell
+jupyter lab password
+
+3. start Jupyter lab from anaconda prompt on server computer
+# ip 0.0.0.0   listen on all IPs
+# --no-browser for not opening jupyter lab on the server itself
+jupyter lab --ip 0.0.0.0 --no-browser --port=8888
+
+Find you local IP version 4
+in Windows its ipconfig in cmd and find the ip for current hardware i.e. wifi or ethernet
+in Linux its ip addr in terminal and find ip for current hardware
+
+4. On the client computer
+Open Google Chrome
+type the URL as <your local ip address>:<port for jupyterlab>
+
+If we want to use the public IP we need to do additional things which I don't know right now.
