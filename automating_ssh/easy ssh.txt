@@ -1,0 +1,47 @@
+# are comments
+Normal way:
+s.1915438@sunbird.swansea.ac.uk
+enter uni password
+ctrl+d to exit
+
+creating config file and alias for our Swansea cluster
+1. Go to home
+cd $HOME
+la -a    #find .ssh directory
+nano .ssh/config
+
+In the text editor type
+Host	sunbird # anyname
+	User	s.1915438
+	HostName 		sunbird.swansea.ac.uk
+crtl+O to write and ctrl+X to close the text editor
+
+2. In the terminal type
+ssh sunbird
+type uni password to login
+
+3. Generate key pairs to log in without password
+ssh-keygen
+#press enter for storing at default location
+enter a paraphrase:  # atleast 6 char
+reenter and SHA256 key pairs are generated
+
+4. copy public key to swansea cluster
+ssh-copy-id sunbird
+type the uni password
+from now on we can use the paraphrase to login
+
+5. adding key to ssh-agent
+ssh-add
+#enter paraphrase
+#type 
+ssh sunbird
+#we can login without password
+
+6. Activate ssh-agent for each interactive-shell
+ssh-agent
+ssh sunbird
+#No password needed
+
+7. ssh tunneling
+leave it. not working
