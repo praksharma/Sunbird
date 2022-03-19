@@ -1,4 +1,4 @@
-How to run Jupyter lab remotely?
+How to run Jupyter lab remotely on a local network? Non-local PCs requires public IP and port forwarding.
 
 Server: Windows 10
 
