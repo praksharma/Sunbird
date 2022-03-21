@@ -1,1 +1,1 @@
-A simple tutorial for working with Docker containers.
+This directory tells you how little I know about Docker containers.
