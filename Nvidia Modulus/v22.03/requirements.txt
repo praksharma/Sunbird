@@ -1,0 +1,4 @@
+pip3 install matplotlib transforms3d future typing numpy quadpy numpy-stl==2.11.2 h5py sympy==1.5.1 termcolor psutil symengine==0.6.1 numba Cython chaospy torch_optimizer vtk chaospy termcolor omegaconf hydra-core einops timm tensorboard pandas orthopy ndim
+
+
+pip3 install -U https://github.com/paulo-herrera/PyEVTK/archive/v1.1.2.tar.gz
