@@ -9,3 +9,18 @@ How to access a Jupyter-lab server running on Sunbird on a local PC?
   * You can drag and drop files.
   * For multiple files, use filezilla.
   
+For daily usage- Pytorch env
+
+```bash
+cd /scratch/s.1915438
+sbatch jupyter.sh
+squeue -u $USER # check the compute node number
+ls -l jupyter_log/  # check latest lof file
+cat jupyter_log/jupyter-lab-7185546.log # check the port number
+```
+
+Port forward:
+
+```
+ssh -N -L 8888:scs2041:8888 s.1915438@sunbird.swansea.ac.uk
+```
