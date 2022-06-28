@@ -11,4 +11,10 @@ salloc: Nodes scs2042 are ready for job
 [s.1915438@sl2 s.1915438]$ source env/modulus/bin/activate
 ```
 
+FOR SSH TUNNEL use
+
+```sh
+ssh -L 8888:localhost:8888 -t s.1915438@sunbird.swansea.ac.uk "bash /scratch/s.1915438/new_modulus.sh"
+```
+
 
