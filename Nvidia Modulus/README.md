@@ -55,3 +55,8 @@ Fortunately, I was able to run Modulus v22.03 in interactive GPU session using `
 
 UPDATE 4:
 On 28th June 2022, I was able to run the full version of Nvidia Modulus i.e. including the tessellation library. Please look at the 3rd ipynb file for more details.
+
+UPDATE 5:
+Date: 29th Aug 2022.
+
+Successfully built Nvidia Modulus 22.07 Apptainer image recipe. See directory v22.07.
