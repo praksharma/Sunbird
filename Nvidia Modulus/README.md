@@ -1,12 +1,14 @@
-UPDATE 1:
+UPDATE 5:
+Date: 29th Aug 2022.
 
-Nvidia Modulus v21.06 doesn't work on SUNBIRD because of some cuDNN issue. I was able to run it on Google Collab and Paperspace Gradient notebooks. However, I've sunbird and I want to leverage it.
+Successfully built Nvidia Modulus 22.07 Apptainer image recipe. See directory v22.07.
 
-Nvidia Modulus v22.03 is promising as it is designed on Pytorch meaning no crappy Tensorflow. Also, they have included some state-of-art architectures. However, looks like it also doesn't work on SUNBIRD due to faulty [installation instructions](https://docs.nvidia.com/deeplearning/modulus/text/getting_started/installation.html#modulus-bare-metal-install).
+UPDATE 4:
+On 28th June 2022, I was able to run the full version of Nvidia Modulus i.e. including the tessellation library. Please look at the 3rd ipynb file for more details.
 
-They are using `egg` files fror PySDF package, that uses `easy_install` which is depreciated and does not work with Python 3.7 and later. `easy_install` was once a part of `setuptools`.
+UPDATE 3:
 
-Fortunately, someone [over here](https://forums.developer.nvidia.com/t/modulus-22-03-bare-metal-installation-no-module-named-easy-install/210970/4) helped me to install Modulus v22.03 by replacing the PySDF file with the one in older version and then following the older instructions. 
+Fortunately, I was able to run Modulus v22.03 in interactive GPU session using `salloc` and then `srun` for commands. Also, Conda environment is experiencing lots of problems. Thus, I will use Python virtual environment.
 
 UPDATE 2:
 
@@ -48,15 +50,12 @@ TypeError: str expected, not NoneType
 
 Ok I get it. This is the list of environment variables. And `RANK` is not in the list.
 
+UPDATE 1:
 
-UPDATE 3:
+Nvidia Modulus v21.06 doesn't work on SUNBIRD because of some cuDNN issue. I was able to run it on Google Collab and Paperspace Gradient notebooks. However, I've sunbird and I want to leverage it.
 
-Fortunately, I was able to run Modulus v22.03 in interactive GPU session using `salloc` and then `srun` for commands. Also, Conda environment is experiencing lots of problems. Thus, I will use Python virtual environment.
+Nvidia Modulus v22.03 is promising as it is designed on Pytorch meaning no crappy Tensorflow. Also, they have included some state-of-art architectures. However, looks like it also doesn't work on SUNBIRD due to faulty [installation instructions](https://docs.nvidia.com/deeplearning/modulus/text/getting_started/installation.html#modulus-bare-metal-install).
 
-UPDATE 4:
-On 28th June 2022, I was able to run the full version of Nvidia Modulus i.e. including the tessellation library. Please look at the 3rd ipynb file for more details.
+They are using `egg` files fror PySDF package, that uses `easy_install` which is depreciated and does not work with Python 3.7 and later. `easy_install` was once a part of `setuptools`.
 
-UPDATE 5:
-Date: 29th Aug 2022.
-
-Successfully built Nvidia Modulus 22.07 Apptainer image recipe. See directory v22.07.
+Fortunately, someone [over here](https://forums.developer.nvidia.com/t/modulus-22-03-bare-metal-installation-no-module-named-easy-install/210970/4) helped me to install Modulus v22.03 by replacing the PySDF file with the one in older version and then following the older instructions. 
