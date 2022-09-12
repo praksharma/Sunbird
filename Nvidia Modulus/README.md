@@ -1,3 +1,7 @@
+UPDATE 6:
+Date: 12th Sep 2022.
+Successfully trained LDC on multiple GPUs using `mpirun` and NVIDIA Modulus 22.07 Apptainer image.
+
 UPDATE 5:
 Date: 29th Aug 2022.
 
