@@ -1,11 +1,19 @@
+UPDATE 7;
+Date: 21st Sep 2022
+
+Successfully port forwarded a `jupyter-lab` server from within the Apptainer image to my local PC. The tutorial can be found in `v22.09/`
+
 UPDATE 6:
 Date: 12th Sep 2022.
-Successfully trained LDC on multiple GPUs using `mpirun` and NVIDIA Modulus 22.07 Apptainer image.
+
+Successfully trained LDC on multiple GPUs using `mpirun` and NVIDIA Modulus 22.07 Apptainer image. The tutorial can be found in `v22.07/`
+
 
 UPDATE 5:
 Date: 29th Aug 2022.
 
-Successfully built Nvidia Modulus 22.07 Apptainer image recipe. See directory v22.07.
+Successfully built Nvidia Modulus 22.07 Apptainer image recipe. See directory v22.07. The tutorial can be found in `v22.07/`
+
 
 UPDATE 4:
 On 28th June 2022, I was able to run the full version of Nvidia Modulus i.e. including the tessellation library. Please look at the 3rd ipynb file for more details.
