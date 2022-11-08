@@ -11,7 +11,7 @@ One can follow `this <https://edbennett.github.io/SCW-tutorial/>`_ basic tutoria
 
 These tutorials are fairly advanced and is meant to increase the productivity. A comprehensive but non-intuitive guide can be found `here <https://github.com/praksharma/Sunbird/blob/main/Supercomputing-Wales-User-Guide-User-Guide-2020-v1.pdf>`_.
 
-Basics tutorials
+Basics Tutorials
 ----------------
 
 .. toctree::
@@ -27,7 +27,7 @@ Basics tutorials
    notebooks/Remote-SSH
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Submit Interactive Jobs
 
    notebooks/1. Use GPU interactive session
@@ -44,7 +44,7 @@ Basics tutorials
 
    notebooks/3. Interactive GPU best practices
 
-Intermediate tutorials
+Intermediate Tutorials
 ----------------------
 
 .. toctree:: 
@@ -65,8 +65,8 @@ Intermediate tutorials
 
    notebooks/On_GPU_node
 
-Advanced tutorials
-----------------------
+Advanced Tutorials
+------------------
 
 .. toctree:: 
    :maxdepth: 2
@@ -75,3 +75,119 @@ Advanced tutorials
    notebooks/1. Basic
    notebooks/2. Daily_use
 
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Swansea University VPN Tunnel
+
+   notebooks/1. Setting up the VPN
+   notebooks/2. Setting up the Host system
+   notebooks/3. SSH
+   notebooks/4. RDP
+
+Docker Tutorials
+----------------
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Basic commands
+
+   notebooks/1. Basic manual/1. Basics
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Advanced commands
+
+   notebooks/1. Basic manual/3. Advanced
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Port Mapping of Jupyter server
+   
+   notebooks/1. Basic manual/Jupyter-lab_inside_container
+
+Singularity Tutorials
+---------------------
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Singularity Basics
+
+   notebooks/Singularity/1. Singularity basics
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Volume Binding
+
+   notebooks/Singularity/2. Volume binding
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Basic Builds
+
+   notebooks/Singularity/3. Pulling Docker images
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: NVIDIA Modulus Singularity container (Failed)
+
+   notebooks/Singularity/5. Nvidia Modulus Docker image
+
+NVIDIA Modulus Setup
+--------------------
+
+v22.03
+******
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Interactive GPU session
+   
+   notebooks/Nvidia Modulus/v22.03/1. Using interactive GPU session
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Multi-GPU
+
+   notebooks/Nvidia Modulus/v22.03/2. Parallel Processing using Multi-GPU Configurations
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: With PySDF
+
+   notebooks/Nvidia Modulus/v22.03/3. Full Nvidia Modulus
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: v22.03 Summary
+
+   notebooks/Nvidia Modulus/v22.03/4. best practices
+
+v22.07 - Apptainer Image
+************************
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Constructing the Apptainer script
+
+   notebooks/Nvidia Modulus/v22.07/1. main
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Overiding Defaults of Apptainer 
+
+   notebooks/Nvidia Modulus/v22.07/2. Some fixes
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Multi-GPU trainign using mpirun
+
+   notebooks/Nvidia Modulus/v22.07/3. Apptainer multiple GPU/1. Nvidia Modulus multiple GPUs
+
+v22.09 - Apptainer Image
+************************
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: The Apptainer script
+
+   notebooks/Nvidia Modulus/v22.09/1. Building an Apptainer image
