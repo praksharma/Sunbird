@@ -11,5 +11,5 @@ furo==2022.9.29
 sphinx-basic-ng==1.0.0b1
 ipython==8.6.0
 Pygments==2.13.0
-jupyter==1.0.0
+jupyterlab==3.5.0
 nbconvert==7.2.3
