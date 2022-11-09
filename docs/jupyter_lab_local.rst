@@ -1,4 +1,4 @@
-Automatic SSH
+Remote Jupyter Lab
 ======================
 
 Here we assume that the server/ host is a Windows 10 machine and the customer/client is a Linux machine.
