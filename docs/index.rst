@@ -9,19 +9,37 @@ Welcome to HPC Helper's documentation!
 This documentation summarises my experience mainly with `Sunbird <https://portal.supercomputing.wales/index.php/about-sunbird/>`_, a HPC cluster located at the `Computational Foundry, Swansea University, Wales <https://www.swansea.ac.uk/compsci/swansea-academy-of-advanced-computing-sa2c/supercomputing-wales/>`_.
 One can follow `this <https://edbennett.github.io/SCW-tutorial/>`_ basic tutorial to understand the standard operations on any HPC cluster.
 
-These tutorials are fairly advanced and is meant to increase the productivity. A comprehensive but non-intuitive guide can be found `here <https://github.com/praksharma/Sunbird/blob/main/Supercomputing-Wales-User-Guide-User-Guide-2020-v1.pdf>`_.
+The tutorials are classified as basic, Intermediate and advanced. A comprehensive but non-intuitive guide can be found `here <https://github.com/praksharma/Sunbird/blob/main/Supercomputing-Wales-User-Guide-User-Guide-2020-v1.pdf>`_.
 
-Basics Tutorials
+Personal Tweaks
+---------------
+By default, the ``.bashrc`` is read-only for the ``$USER`` and regenerates itself after the major updates. We are provide with ``~/.myenv`` to put all the personal tweaks such as the login directory, print a message, export environment variables etc.
+
+Care should be taken that directly printing a message on ``STDOUT`` will create problems with ``SFTP`` connections, instead we can use ``STDERR`` to print the message. Here is an example.
+
+.. code-block:: bash
+
+   [s.1915438@sl1(sunbird) s.1915438]$ cat $HOME/.myenv 
+   echo "MESSAGE : env variables loaded">&2
+   export VL_DIR=/scratch/s.1915438/vltesting/VirtualLab
+   export PATH=$PATH:/scratch/s.1915438/vltesting/VirtualLab/bin
+
+   cd /scratch/s.1915438
+   pwd>&2
+
+This will echo the MESSAGE, the ``pwd``, create the environment variables and cd to the ``/scratch/s.1915438`` partition each time a new TTY session is opened in a login or a compute node. 
+
+Basic Tutorials
 ----------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: SSH basics
 
    ssh.rst
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Remote VS Code
    
    notebooks/Remote-SSH
@@ -33,13 +51,13 @@ Basics Tutorials
    notebooks/1. Use GPU interactive session
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Submit Batch Jobs
 
    notebooks/2. Job submission with GPU
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: MIG partition Issues
 
    notebooks/3. Interactive GPU best practices
@@ -48,19 +66,19 @@ Intermediate Tutorials
 ----------------------
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Jupyter Lab port forward on local network
    
    jupyter_lab_local.rst
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Jupyter Lab port forward from the Login node of Sunbird
 
    notebooks/On_Login_node
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Jupyter Lab port forward from a compute node of Sunbird
 
    notebooks/On_GPU_node
@@ -69,14 +87,14 @@ Advanced Tutorials
 ------------------
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Remote VNC session
 
    notebooks/1. Basic
    notebooks/2. Daily_use
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Swansea University VPN Tunnel
 
    notebooks/1. Setting up the VPN
