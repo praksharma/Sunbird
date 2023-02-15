@@ -15,6 +15,7 @@ The tutorials are classified as basic, Intermediate and advanced. A comprehensiv
 
 Personal Tweaks
 ---------------
+---------------
 By default, the ``.bashrc`` is read-only for the ``$USER`` and regenerates itself after the major updates. We are provide with ``~/.myenv`` to put all the personal tweaks such as the login directory, print a message, export environment variables etc.
 
 Care should be taken that directly printing a message on ``STDOUT`` will create problems with ``SFTP`` connections, instead we can use ``STDERR`` to print the message. Here is an example.
@@ -30,6 +31,18 @@ Care should be taken that directly printing a message on ``STDOUT`` will create 
    pwd>&2
 
 This will echo the MESSAGE, the ``pwd``, create the environment variables and cd to the ``/scratch/s.1915438`` partition each time a new TTY session is opened in a login or a compute node. 
+
+**EDIT : 15th Feb 2023** : I found a disastrous thing with Python venv. So for now, screw this tutorial and read following page:
+
+Life Saving Tutorials
+------------------
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Python venv Simlink issue
+
+   notebooks/important_notes/1. python venv issue
+
 
 Basic Tutorials
 ----------------
