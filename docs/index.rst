@@ -211,3 +211,9 @@ v22.09 - Apptainer Image
    :caption: The Apptainer script
 
    notebooks/Nvidia Modulus/v22.09/1. Building an Apptainer image
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Jupyter-lab port forwarding
+
+   notebooks/Nvidia Modulus/v22.09/2. Jupyter-lab_port_forward
