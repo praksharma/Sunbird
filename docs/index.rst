@@ -14,7 +14,7 @@ The tutorials are classified as basic, Intermediate and advanced. An official bu
 
 Personal Tweaks
 ---------------
----------------
+
 By default, the ``.bashrc`` is read-only for the ``$USER`` and regenerates itself after the major updates. We are provide with ``~/.myenv`` to put all the personal tweaks such as the login directory, print a message, export environment variables etc.
 
 Care should be taken that directly printing a message on ``STDOUT`` will create problems with ``SFTP`` connections, instead we can use ``STDERR`` to print the message. Here is an example.
@@ -34,7 +34,7 @@ This will echo the MESSAGE, the ``pwd``, create the environment variables and cd
 **EDIT : 15th Feb 2023** : I found a disastrous thing with Python venv. So if you are using Python venv, read the life saving tutorial below.:
 
 Life Saving Tutorials
-------------------
+----------------------
 
 .. toctree:: 
    :maxdepth: 1
@@ -119,7 +119,7 @@ Advanced Tutorials
 .. toctree::
    :maxdepth: 1
    :caption: Proxy Jump and dynamic port forwarding
-   
+
    notebooks/advanced_ssh/Proxy_jump
 
 Docker Tutorials
