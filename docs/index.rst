@@ -6,11 +6,10 @@
 Welcome to HPC Helper's documentation!
 ======================================
 
-This documentation mainly summarises my experience with `Sunbird <https://portal.supercomputing.wales/index.php/about-sunbird/>`_'s Accelerate AI, a HPC node located at the `Computational Foundry, Swansea University, Wales <https://www.swansea.ac.uk/compsci/swansea-academy-of-advanced-computing-sa2c/supercomputing-wales/>`_.
+This documentation mainly summarises my experience with `Sunbird <https://portal.supercomputing.wales/index.php/about-sunbird/>`_ and mainly Accelerate AI, a HPC node which is a part of `Supercomputing Wales <https://www.supercomputing.wales/>`_.
 One can follow `this <https://edbennett.github.io/SCW-tutorial/>`_ basic tutorial to understand the standard operations on any HPC cluster.
 
-The tutorials are classified as basic, Intermediate and advanced. A comprehensive but non-intuitive guide can be found `here <https://github.com/praksharma/Sunbird/blob/main/Supercomputing-Wales-User-Guide-User-Guide-2020-v1.pdf>`_.
-
+The tutorials are classified as basic, Intermediate and advanced. An official but super complicated guide is available `here <https://github.com/praksharma/Sunbird/blob/main/Supercomputing-Wales-User-Guide-User-Guide-2020-v1.pdf>`_. So, if you consider yourself capable enough to compie `LFS<https://www.linuxfromscratch.org/index.html>`_, then go for it.
 
 
 Personal Tweaks
@@ -32,7 +31,7 @@ Care should be taken that directly printing a message on ``STDOUT`` will create 
 
 This will echo the MESSAGE, the ``pwd``, create the environment variables and cd to the ``/scratch/s.1915438`` partition each time a new TTY session is opened in a login or a compute node. 
 
-**EDIT : 15th Feb 2023** : I found a disastrous thing with Python venv. So for now, screw this tutorial and read following page:
+**EDIT : 15th Feb 2023** : I found a disastrous thing with Python venv. So if you are using Python venv, read the life saving tutorial below.:
 
 Life Saving Tutorials
 ------------------
@@ -116,6 +115,12 @@ Advanced Tutorials
    notebooks/2. Setting up the Host system
    notebooks/3. SSH
    notebooks/4. RDP
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Proxy Jump and dynamic port forwarding
+   
+   notebooks/advanced_ssh/Proxy_jump
 
 Docker Tutorials
 ----------------
