@@ -235,3 +235,9 @@ v22.09 - Apptainer Image
    :caption: Jupyter-lab port forwarding
 
    notebooks/Nvidia Modulus/v22.09/2. Jupyter-lab_port_forward
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Sunbird Module
+
+   notebooks/Nvidia Modulus/v22.09/3. Modulus on Sunbird
