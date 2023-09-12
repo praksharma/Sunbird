@@ -15,7 +15,7 @@ The tutorials are classified as basic, Intermediate and advanced. An official bu
 Personal Tweaks
 ---------------
 
-By default, the ``.bashrc`` is read-only for the ``$USER`` and regenerates itself after the major updates. We are provide with ``~/.myenv`` to put all the personal tweaks such as the login directory, print a message, export environment variables etc.
+By default, the ``.bashrc`` is read-only for the ``$USER`` and regenerates itself after the major updates. We are provided with ``~/.myenv`` to put all the personal tweaks such as the login directory, print a message, export environment variables etc.
 
 Care should be taken that directly printing a message on ``STDOUT`` will create problems with ``SFTP`` connections, instead we can use ``STDERR`` to print the message. Here is an example.
 
