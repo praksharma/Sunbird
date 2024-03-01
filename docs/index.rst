@@ -241,3 +241,12 @@ v22.09 - Apptainer Image
    :caption: Sunbird Module
 
    notebooks/Nvidia Modulus/v22.09/3. Modulus on Sunbird
+
+Foolproof installation of tensorflow on HPC
+********************************************
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Tensorflow installation
+
+   notebooks/tensorflow/installation
