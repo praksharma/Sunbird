@@ -42,6 +42,11 @@ Life Saving Tutorials
 
    notebooks/important_notes/1. python venv issue
 
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Slow SSH and GVFS on Ubuntu 22.04
+
+   notebooks/important_notes/2. slow_ssh
 
 Basic Tutorials
 ----------------
