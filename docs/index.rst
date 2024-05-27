@@ -81,6 +81,12 @@ Basic Tutorials
 
    notebooks/3. Interactive GPU best practices
 
+.. toctree:: 
+   :maxdepth: 1
+   :caption: X forwarding
+
+   notebooks/4. xforwarding
+   
 Intermediate Tutorials
 ----------------------
 

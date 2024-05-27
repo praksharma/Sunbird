@@ -3,7 +3,7 @@
 
 Website : https://sunbird.readthedocs.io/en/latest/
 
-My manuals to work on Sunbird HPC cluster.
+My manuals for Sunbird HPC cluster.
 
 Follow "[Introduction to High Performance Computing for Supercomputing Wales: Introduction to Supercomputing Wales](https://edbennett.github.io/SCW-tutorial/)" to get the basic understanding of HPC clusters.
 
