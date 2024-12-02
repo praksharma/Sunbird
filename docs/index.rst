@@ -6,7 +6,13 @@
 Welcome to HPC Helper's documentation!
 ======================================
 
-This documentation mainly summarises my experience with `Sunbird <https://portal.supercomputing.wales/index.php/about-sunbird/>`_ and mainly Accelerate AI, a HPC node which is a part of `Supercomputing Wales <https://www.supercomputing.wales/>`_.
+.. warning::
+   Sunbird is being replaced somewhere around the start of 2025. However, the system will remain mostly the same and these tutorials will still be useful.
+
+.. note::
+   I finished my PhD in Nov 2024 and stopped using Sunbird. I am archiving this documentation and will not be updating it anymore. I will start a new repo for ARCHER2, CSD3 and Cumulus.
+
+This documentation summaries my experience with `Sunbird <https://portal.supercomputing.wales/index.php/about-sunbird/>`_ and mainly Accelerate AI, a HPC node which is a part of `Supercomputing Wales <https://www.supercomputing.wales/>`_.
 One can follow `this <https://edbennett.github.io/SCW-tutorial/>`_ basic tutorial to understand the standard operations on any HPC cluster.
 
 The tutorials are classified as basic, Intermediate and advanced. An official but super complicated guide is available `here <https://github.com/praksharma/Sunbird/blob/main/Supercomputing-Wales-User-Guide-User-Guide-2020-v1.pdf>`_. So, if you consider yourself capable enough to compile `LFS <https://www.linuxfromscratch.org/index.html>`_, then go for it.
